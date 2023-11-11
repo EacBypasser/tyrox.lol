@@ -69,5 +69,5 @@ select_optimizer.addEventListener("change", () => {
 });
 
 if (window.location.href.includes('tyrox.lol/discord')) {
-    window.location.href = 'https://discord.gg/tnm';
+    window.location.href = 'https://discord.gg/';
 }
