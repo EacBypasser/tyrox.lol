@@ -1,0 +1,386 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap);.nav-links,nav {
+    display: flex;
+    align-items: center
+}
+
+.nav-links,img,nav {
+    display: flex
+}
+
+.features .card span,header .content h1,section .header {
+    margin-bottom: 1rem;
+    color: #fff
+}
+
+.link a,footer,header,header .image {
+    position: relative
+}
+
+.btn,.link a::after {
+    background-color: #1d4ed8
+}
+
+img,select {
+    width: 100%
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Poppins,sans-serif;
+    background-color: #18181b
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    gap: 2rem
+}
+
+.nav-logo {
+    max-width: 100px
+}
+
+.nav-links {
+    list-style: none;
+    gap: 3rem
+}
+
+.features,.pricing,footer,header {
+    display: grid;
+    gap: 2rem
+}
+
+.link a {
+    padding-bottom: .75rem;
+    color: #fff
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: .3s
+}
+
+.btn:hover,.features .card span {
+    background-color: #1e40af
+}
+
+.link a:hover::after {
+    width: 70%
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.card,.features .card,.pricing .card,select,select option {
+    background-color: #27272a
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100
+}
+
+header {
+    padding-top: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600
+}
+
+header .content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #ccc
+}
+
+header .image img {
+    max-width: 600px;
+    margin: auto
+}
+
+section .header {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600
+}
+
+.features {
+    margin-top: 4rem;
+    grid-template-columns: repeat(4,1fr)
+}
+
+.features .card {
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: .3s
+}
+
+.features .card:hover {
+    background-color: #323232;
+    border-color: #fff
+}
+
+.features .card span {
+    display: inline-block;
+    padding: 2px 9px;
+    font-size: 1.75rem;
+    border-radius: 5px
+}
+
+.features .card h4 {
+    margin-bottom: .5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600
+}
+
+.features .card p {
+    color: #ccc;
+    margin-bottom: 1rem
+}
+
+.features .card a {
+    color: #fff;
+    transition: .3s
+}
+
+.features .card a:hover {
+    color: #1e40af
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc
+}
+
+.pricing {
+    margin-top: 4rem;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.pricing .card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    transition: .3s
+}
+
+.pricing .card:hover {
+    background-color: #323232;
+    border-color: #c9c9c9
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500
+}
+
+.pricing .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff
+}
+
+.pricing .card p {
+    color: #fff;
+    margin-bottom: .75rem
+}
+
+.pricing .card p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: .3rem
+}
+
+.pricing .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff
+}
+
+.pricing .card button:hover {
+    background-color: #1e40af;
+    border-color: #1e40af
+}
+
+footer {
+    grid-template-columns: 400px repeat(3,1fr)
+}
+
+footer .column .logo {
+    max-width: 100px;
+    margin-bottom: 2rem
+}
+
+footer .column p {
+    color: #ccc;
+    margin: 2rem
+}
+
+.card,.copyright,footer .column h4,select,select option {
+    color: #fff
+}
+
+footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+footer .column .socials a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: .3s
+}
+
+footer .column .socials a:hover {
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8
+}
+
+footer .column h4 {
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right
+}
+
+footer .column>a {
+    display: block;
+    color: #ccc;
+    margin: 1rem;
+    transition: .3s;
+    text-align: right
+}
+
+footer .column>a:hover {
+    color: #1d4ed8
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: .8rem;
+    text-align: center
+}
+
+@media (width < 900px) {
+    .nav-links {
+        display: none
+    }
+
+    header {
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    header .image {
+        grid-area: 1/1/2/2
+    }
+
+    .features,.pricing {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    footer {
+        grid-template-columns: 1fr 200px
+    }
+}
+
+@media (width < 600px) {
+    header .image :before {
+        display:none
+    }
+
+    .features,.pricing {
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px
+    }
+}
+
+.card {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1)
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: -10px
+}
+
+.btn {
+    margin-top: 10px
+}
