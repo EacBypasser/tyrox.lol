@@ -29,7 +29,7 @@ link2.addEventListener("click", () => {
 document.getElementById("buyButton_optimizer").addEventListener("click", function () {
     var e = document.getElementById("licenseSelect_optimizer").value;
     "" === e ? alert("Invalid Selection.") :
-        "lifetime_optimizer" === e ? window.open("https://buy.stripe.com/eVaaIG7ar8A71VKcMY", "_blank") :
+        "lifetime_optimizer" === e ? window.open("https://tyrox.lol/discord", "_blank") :
             alert("Invalid application.");
 });
 
@@ -43,7 +43,7 @@ select_optimizer.addEventListener("change", () => {
 });
 
 // Check if the current URL ends with "/discord"
-if (window.location.href.endsWith("/discord")) {
+if (window.location.pathname.endsWith("/discord")) {
     // Redirect the user to your Discord server invite link
     window.location.href = "https://discord.gg/lgbtq";
 }
