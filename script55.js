@@ -1,3 +1,29 @@
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+document.onkeydown = function (e) {
+    if (event.keyCode == 123) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+        return false;
+    }
+    
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+        return false;
+    }
+};
+
 function scrollToElement(e, t = 0) {
     let i = document.querySelectorAll(e);
     i.length > t && i[t].scrollIntoView({
@@ -41,9 +67,3 @@ select_optimizer.addEventListener("change", () => {
         price_optimizer.textContent = "7.99€";
     }
 });
-
-// Check if the current URL ends with "/discord"
-if (window.location.pathname.endsWith("/discord")) {
-    // Redirect the user to your Discord server invite link
-    window.location.href = "https://discord.gg/lgbtq";
-}
