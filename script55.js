@@ -67,3 +67,7 @@ select_optimizer.addEventListener("change", () => {
         price_optimizer.textContent = "7.99€";
     }
 });
+
+if (window.location.href.includes('tyrox.lol/discord')) {
+    window.location.href = 'https://discord.gg/tnm';
+}
