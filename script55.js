@@ -28,7 +28,7 @@ link2.addEventListener("click", () => {
 
 document.getElementById("buyButton_optimizer").addEventListener("click", function () {
     var e = document.getElementById("licenseSelect_optimizer").value;
-    "" === e ? alert("Select an application.") :
+    "" === e ? alert("Invalid Selection.") :
         "lifetime_optimizer" === e ? window.open("https://buy.stripe.com/eVaaIG7ar8A71VKcMY", "_blank") :
             alert("Invalid application.");
 });
